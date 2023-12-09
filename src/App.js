@@ -2,7 +2,7 @@ import Home from "../src/pages/Home/Home";
 import Chat from "../src/pages/Chat/Chat";
 import ListChat from "../src/pages/Chat/ListChat";
 import Pembayaran from "../src/pages/Pembayaran/Pembayaran";
-import ScreenClothesDescription from "./pages/Detail/Detail";
+import Detail from "./pages/Detail/Detail";
 // import { createRoot } from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import React from "react";
@@ -22,7 +22,7 @@ const App = () => {
         <Route path="/chat" element={<Chat />} />
         <Route path="/listchat" element={<ListChat />} />
         <Route path="/pembayaran" element={<Pembayaran />} />
-        <Route path="/detail" element={<ScreenClothesDescription />} />
+        <Route path="/detail/:id" element={<Detail/>} />
       </Routes>
     </BrowserRouter>
   );
