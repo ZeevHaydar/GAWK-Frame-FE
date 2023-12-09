@@ -79,7 +79,35 @@ const Detail = () => {
         <InfoContainer>
           <div className="Price" style={{ fontSize: '24px', fontFamily: 'Inter', fontWeight: '500', lineHeight: '26px', wordWrap: 'break-word' }}>Harga: {clothesData.harga}</div>
           <div className="Category" style={{ fontSize: '20px', fontFamily: 'Inter', fontWeight: '500', lineHeight: '22px', wordWrap: 'break-word' }}>Kategori: {clothesData.kategori}</div>
-          <div className="Stock" style={{ fontSize: '20px', fontFamily: 'Inter', fontWeight: '500', lineHeight: '22px', wordWrap: 'break-word' }}>Stok: {clothesData.stok}</div>
+          <div className="Stock" style={{ fontSize: '20px', fontFamily: 'Inter', fontWeight: '500', lineHeight: '22px', wordWrap: 'break-word'}}>Stok: {clothesData.stok}</div>
+          <div className="Ukuran" style={{ fontSize: '20px', fontFamily: 'Inter', fontWeight: '500', lineHeight: '22px', wordWrap: 'break-word' , marginTop: '20px'}}>Ukuran</div>
+          <div style={{ marginTop: '20px', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+            {/* Square around 'S' */}
+            <div style={{ marginRight: '10px', fontSize: '18px', fontFamily: 'Inter', fontWeight: '500', width: '30px', height: '30px', display: 'flex', justifyContent: 'center', alignItems: 'center', border: '2px solid #2D3648' }}>S</div>
+            {/* Square around 'M' */}
+            <div style={{ marginRight: '10px', fontSize: '18px', fontFamily: 'Inter', fontWeight: '500', width: '30px', height: '30px', display: 'flex', justifyContent: 'center', alignItems: 'center', border: '2px solid #2D3648' }}>M</div>
+            {/* Square around 'L' */}
+            <div style={{ marginRight: '10px', fontSize: '18px', fontFamily: 'Inter', fontWeight: '500', width: '30px', height: '30px', display: 'flex', justifyContent: 'center', alignItems: 'center', border: '2px solid #2D3648' }}>L</div>
+            {/* Square around 'XL' */}
+            <div style={{ fontSize: '18px', fontFamily: 'Inter', fontWeight: '500', width: '30px', height: '30px', display: 'flex', justifyContent: 'center', alignItems: 'center', border: '2px solid #2D3648' }}>XL</div>
+          </div>
+          <button
+            className="buy-button"
+            style={{
+              marginTop: '20px',
+              padding: '10px 20px',
+              fontSize: '18px',
+              fontFamily: 'Inter',
+              fontWeight: '500',
+              background: '#2D3648',
+              color: 'white',
+              border: 'none',
+              cursor: 'pointer',
+            }}
+            onClick={() => {}}
+          >
+            Buy Now
+          </button>
         </InfoContainer>
       </Box>
     </Flex>
