@@ -11,4 +11,8 @@ Perkenalkan! Kami dari kelompok 12:
 
 ## About the Prototype
 
-Prototype dari layanan yang telah kami rancang adalah prototype sebuah website untuk proses bisnis pemasaran dan penjualan. Pada page utama kita dapat melihat daftar baju yang dijual. Ketika ditekan salah-satunya akan dipindahkan ke halaman detail baju. Dari detail baju pembeli bisa memilih untuk beli, dan akan membayar untuk pembelian mereka.
+Prototype dari layanan yang telah kami rancang adalah prototype sebuah website untuk proses bisnis pemasaran dan penjualan.
+<br><br> Pada page utama kita dapat melihat daftar baju yang dijual. Ketika ditekan salah-satunya akan dipindahkan ke halaman detail baju.
+<br> Dari detail baju pembeli bisa memilih untuk beli, dan akan membayar untuk pembelian mereka.
+<br> <b><i> Sayangnya untuk implementasi Front-End sekarang ini hanya tersedia opsi untuk menampilkan daftar baju dan detail baju. </i></b>
+<br><br> Apabila ingin mencoba API maka silahkan mengunjungi link berikut: [GAWK-Frame-BE](https://github.com/ZeevHaydar/GAWK-Frame-BE)
