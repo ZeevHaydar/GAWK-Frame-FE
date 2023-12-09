@@ -36,8 +36,24 @@ const PictureSlots = ({ width, height, paddingTop, left, top }) => (
   </div>
 );
 
-const ScreenClothesDescription = () => (
-  <Flex>
+const ScreenClothesDescription = () => {
+  const [clothesData, setClothesData] = useState([]);
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        // Replace 'YOUR_API_ENDPOINT' with the actual API endpoint
+        const response = await fetch('/api/pakaian/');
+        const data = await response.json();
+        setClothesData(data);
+      } catch (error) {
+        console.error('Error fetching data:', error);
+      }
+    };
+
+    fetchData();
+  }, []);
+  return (
+    <Flex>
     <Box style={{ width: '100vw', height: '71vw', position: 'relative', background: 'white' }}>
       <PictureSlots width={'400px'} height={'550px'} paddingTop={'10px'} left={'30px'} top={'40px'} />
       {/* <PictureSlots width={'22.15vw'} height={'35vw'} paddingTop={'2.78vw'} left={'26.74vw'} top={'5vw'} /> */}
@@ -46,6 +62,7 @@ const ScreenClothesDescription = () => (
       {/* Other components go here */}
     </Box>
   </Flex>
-);
+  )
+};
 
 export default ScreenClothesDescription;
